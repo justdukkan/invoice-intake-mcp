@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.justdukkan/invoice-intake-mcp",
   "title": "Invoice Intake (reference)",
-  "description": "Reference invoice-intake MCP servers: read/draft/commit split, typed errors, approval gate, audit log",
+  "description": "Reference invoice-intake MCP servers: read/draft/commit split, typed errors, approval gate, audit",
   "version": "0.1.0",
   "websiteUrl": "https://justdukkan.com/insights/mcp-server-and-tool-design/",
   "repository": {
