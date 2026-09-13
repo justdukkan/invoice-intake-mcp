@@ -1,0 +1,23 @@
+[project]
+name = "invoice-intake-mcp"
+version = "0.1.0"
+description = "Reference MCP servers for supplier invoice intake: read/draft/commit split, typed errors, server-side approval gate, audit log."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "JustDukkan, LLC", email = "enes@justdukkan.com" }]
+dependencies = ["mcp>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://justdukkan.com"
+Article = "https://justdukkan.com/insights/mcp-server-and-tool-design/"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["invoice_intake_mcp*"]
