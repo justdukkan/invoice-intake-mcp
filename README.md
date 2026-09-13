@@ -1,6 +1,6 @@
 # invoice-intake-mcp
 
-<!-- mcp-name: io.github.justdukkan/invoice-intake-mcp -->
+<!-- mcp-name: com.justdukkan/invoice-intake-mcp -->
 
 Reference implementation of the tool-design rules in
 [Designing MCP servers and tools that agents can use safely](https://justdukkan.com/insights/mcp-server-and-tool-design/),

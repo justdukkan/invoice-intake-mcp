@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.justdukkan/invoice-intake-mcp",
+  "name": "com.justdukkan/invoice-intake-mcp",
   "title": "Invoice Intake (reference)",
   "description": "Reference invoice-intake MCP servers: read/draft/commit split, typed errors, approval gate, audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://justdukkan.com/insights/mcp-server-and-tool-design/",
   "repository": {
     "url": "https://github.com/justdukkan/invoice-intake-mcp",
@@ -13,7 +13,7 @@
     {
       "registryType": "pypi",
       "identifier": "invoice-intake-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

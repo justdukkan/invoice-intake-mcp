@@ -1,6 +1,6 @@
 [project]
 name = "invoice-intake-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reference MCP servers for supplier invoice intake: read/draft/commit split, typed errors, server-side approval gate, audit log."
 readme = "README.md"
 requires-python = ">=3.10"
