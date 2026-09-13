@@ -11,8 +11,12 @@ dependencies = ["mcp>=2.0"]
 [project.optional-dependencies]
 dev = ["pytest"]
 
+[project.scripts]
+invoice-intake-mcp = "invoice_intake_mcp.server:main"
+
 [project.urls]
 Homepage = "https://justdukkan.com"
+Repository = "https://github.com/justdukkan/invoice-intake-mcp"
 Article = "https://justdukkan.com/insights/mcp-server-and-tool-design/"
 
 [build-system]

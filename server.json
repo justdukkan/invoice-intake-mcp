@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.justdukkan/invoice-intake-mcp",
+  "title": "Invoice Intake (reference)",
+  "description": "Reference MCP servers for supplier invoice intake: read/draft/commit split, typed errors, server-side approval gate, audit log.",
+  "version": "0.1.0",
+  "websiteUrl": "https://justdukkan.com/insights/mcp-server-and-tool-design/",
+  "repository": {
+    "url": "https://github.com/justdukkan/invoice-intake-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "invoice-intake-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "named",
+          "name": "--role",
+          "value": "read",
+          "isRequired": true,
+          "description": "read = reads + reversible staging (give this to specialist agents); commit = irreversible posting (orchestrator only)",
+          "choices": [
+            "read",
+            "commit"
+          ]
+        }
+      ]
+    }
+  ]
+}

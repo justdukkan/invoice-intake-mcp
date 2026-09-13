@@ -1,5 +1,7 @@
 # invoice-intake-mcp
 
+<!-- mcp-name: io.github.justdukkan/invoice-intake-mcp -->
+
 Reference implementation of the tool-design rules in
 [Designing MCP servers and tools that agents can use safely](https://justdukkan.com/insights/mcp-server-and-tool-design/),
 on a real back-office process: supplier invoice intake.
@@ -53,8 +55,8 @@ match rule, the tolerance or the approval limit.
 ```json
 {
   "mcpServers": {
-    "invoice-intake-read":   { "command": "python", "args": ["-m", "invoice_intake_mcp.server", "--role", "read"] },
-    "invoice-intake-commit": { "command": "python", "args": ["-m", "invoice_intake_mcp.server", "--role", "commit"] }
+    "invoice-intake-read":   { "command": "uvx", "args": ["invoice-intake-mcp", "--role", "read"] },
+    "invoice-intake-commit": { "command": "uvx", "args": ["invoice-intake-mcp", "--role", "commit"] }
   }
 }
 ```

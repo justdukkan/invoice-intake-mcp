@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 state.json
 audit.jsonl
+dist/
+*.egg-info/
